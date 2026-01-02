@@ -1,13 +1,13 @@
 # Challenge 3: Balanced Performance Score
 
 # Scores Array of Team A
-scoresA = [1,3,9,6,1,7,10]
+scoresA = [1,2]
 
 # Scores Array of Team B
-scoresB = [2]
+scoresB = [3,4]
 
 
-def findMedianSortedArrays(A, B):
+def findMedianSortedArrays(scoresA : list, scoresB : list) -> float :
     """Complexity Analysis
     Approach : Average
     Time Complexity : O(m + n) -> Linear
@@ -18,7 +18,7 @@ def findMedianSortedArrays(A, B):
 
     """
 
-    n, m = len(A), len(B)
+    n, m = len(scoresA), len(scoresB)
     total = n + m
 
     i = j = 0
@@ -29,11 +29,11 @@ def findMedianSortedArrays(A, B):
     while count <= total // 2:
         prev = curr
 
-        if i < n and (j >= m or A[i] <= B[j]):
-            curr = A[i]
+        if i < n and (j >= m or scoresA[i] <= scoresB[j]):
+            curr = scoresA[i]
             i += 1
         else:
-            curr = B[j]
+            curr = scoresB[j]
             j += 1
 
         count += 1
