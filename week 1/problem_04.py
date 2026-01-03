@@ -88,5 +88,9 @@ def kthSmallestElement3(matrix : list[list[int]], k) -> int:
 
     return low
 
-print(kthSmallestElement3(matrix,k))
+
+print(f"Input: matrix = {matrix}, k = {k}")
+print(f"Kth smallest Element Using Brute Force : {KthSmallestElement1(matrix,k)}")
+print(f"Kth smallest Element Using Heap : {KthSmallestElement2(matrix,k)}")
+print(f"Kth smallest Element Using Binary Search (Optimal) : {kthSmallestElement3(matrix,k)}")
 

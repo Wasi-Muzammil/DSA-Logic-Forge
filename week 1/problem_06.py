@@ -15,6 +15,6 @@ def towerOfHanoi(N : int, from_rod : str, to_rod : str, aux_rod : str) -> None:
     print(f"Disk {N} moved from {from_rod} to {to_rod}")
     towerOfHanoi(N - 1, aux_rod, to_rod, from_rod)
 
-
-N = 4
+N=4
+print(f"Input : N = {N} ")
 towerOfHanoi(N, "A", 'C', 'B')

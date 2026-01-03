@@ -1,10 +1,10 @@
 # Challenge 2: Password Recovery Window
 
 # Log string
-s = "ddaabawfweef"
+log = "a"
 
 # Pattern String
-t = "abf"
+pattern = "aa"
 
 def Minimum_Window_Substring1(log:str , pattern:str) -> str:
     """Complexity Analysis
@@ -107,6 +107,8 @@ def Minimum_Window_Substring2(log : str, pattern : str) -> str:
 
     return log[start:start + min_len]
 
-print(Minimum_Window_Substring1(s,t))
-print(Minimum_Window_Substring2(s,t))
+
+print(f"Input:  log = '{log}', pattern = '{pattern}'")
+print(f"Brute Force : {Minimum_Window_Substring1(log,pattern)}")
+print(f"Optimal : {Minimum_Window_Substring2(log,pattern)}")
 

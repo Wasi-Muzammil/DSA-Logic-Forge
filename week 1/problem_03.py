@@ -1,10 +1,10 @@
 # Challenge 3: Balanced Performance Score
 
 # Scores Array of Team A
-scoresA = [1,2]
+scoresA = [1,3]
 
 # Scores Array of Team B
-scoresB = [3,4]
+scoresB = [2]
 
 
 def findMedianSortedArrays(scoresA : list, scoresB : list) -> float :
@@ -43,5 +43,5 @@ def findMedianSortedArrays(scoresA : list, scoresB : list) -> float :
     else:
         return curr
     
-
-print(findMedianSortedArrays(scoresA,scoresB))
+print(f"Input:  scoresA = {scoresA}, scoresB = {scoresB}")
+print(f"Median : {findMedianSortedArrays(scoresA,scoresB)}")

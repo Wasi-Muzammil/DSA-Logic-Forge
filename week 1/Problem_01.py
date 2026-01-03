@@ -73,6 +73,8 @@ def Calculate_Contributions3(contributions:list) -> list:
 
     return impact
 
+print(f"Contributions : {contributions}")
 print(f"Brute Force Approach : {Calculate_Contributions1(contributions)}")
 print(f"Average Approach : {Calculate_Contributions2(contributions)}")
 print(f"Optimal Approach : {Calculate_Contributions3(contributions)}")
+

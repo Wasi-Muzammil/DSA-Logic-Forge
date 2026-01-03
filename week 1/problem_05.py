@@ -1,3 +1,5 @@
+
+
 def RemoveInvalidParentheses(expr: str) -> list:
     """ Complexity Analysis
         Approach : Optimal Approach
@@ -65,9 +67,9 @@ def dfs(expr : str, results : set, index : int, left_count : int, left_rem : int
             path.pop()
 
 
-print(RemoveInvalidParentheses("()())()")) 
-print(RemoveInvalidParentheses("(a)())()")) 
-print(RemoveInvalidParentheses(")("))        
-print(RemoveInvalidParentheses("()"))       
-print(RemoveInvalidParentheses("abc"))
-print(RemoveInvalidParentheses("((("))
+print(f"Input : {"()())()"}  , Output : {RemoveInvalidParentheses("()())()")}") 
+print(f"Input : {"(a)())()"} , Output : {RemoveInvalidParentheses("(a)())()")}") 
+print(f"Input : {")("}       , Output : {RemoveInvalidParentheses(")(")}")        
+print(f"Input : {"()"}       , Output : {RemoveInvalidParentheses("()")}")       
+print(f"Input : {"abc"}      , Output : {RemoveInvalidParentheses("abc")}")
+print(f"Input : {"((("}      , Output : {RemoveInvalidParentheses("(((")}")
